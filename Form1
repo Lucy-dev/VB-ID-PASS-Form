@@ -1,0 +1,4 @@
+ Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        WebBrowser1.Document.GetElementById("sidForm_sidAccount").InnerText = TextBox1.Text
+        WebBrowser1.Document.GetElementById("sidForm_sidPassword").InnerText = TextBox2.Text
+        WebBrowser1.Document.GetElementById("sidForm_sidLogin").InvokeMember("click")
